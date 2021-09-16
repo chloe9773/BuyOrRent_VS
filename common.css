@@ -22,6 +22,9 @@
 .font-20 {
     font-size: 20px;
 }
+.font-32 {
+    font-size: 32px;
+}
 .font-40 {
     font-size: 40px;
 }
@@ -95,6 +98,9 @@
 .w-70 {
 	width : 70%;	
 }
+.w-80 {
+	width : 80%;	
+}
 .w-95 {
 	width : 95%;	
 }
@@ -152,6 +158,9 @@
 .m-center {
     margin: 0 auto;
 }
+.mr-5 {
+    margin-right: 5px;
+}
 .mr-10 {
     margin-right: 10px;
 }
@@ -170,6 +179,12 @@
 .mb-16 {
     margin-bottom: 16px;
 }
+.mb-r-1 {
+    margin-bottom: 1rem;
+}
+.mb-r-2 {
+    margin-bottom: 2rem;
+}
 .mb-r-4 {
     margin-bottom: 4rem;
 }
@@ -179,6 +194,10 @@
 .mt-r-2 {
     margin-top: 2rem;
 }
+.mt-r-8 {
+    margin-top: 8rem;
+}
+
 /* border */
 .border-0 {
     border: 0;
@@ -207,6 +226,14 @@
 }
 .d-none {
 	display : none;
+}
+
+/* float */
+.f-left {
+    float: left;
+}
+.clear {
+    clear: both;
 }
 
 /* display related */
