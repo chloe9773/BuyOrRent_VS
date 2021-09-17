@@ -168,6 +168,9 @@
 .pt-r-4{
     padding-top: 4rem;
 }
+.pt-r-8{
+    padding-top: 8rem;
+}
 .pb-r-2{
     padding-bottom: 2rem;
 }
@@ -205,6 +208,12 @@
 }
 .mb-16 {
     margin-bottom: 16px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
 }
 .mb-r-1 {
     margin-bottom: 1rem;
@@ -310,6 +319,17 @@
     text-align: center;
     line-height: 40px;
     font-size: 30px;
+}
+
+/* select style */
+.location-select {
+    border: solid 1px #e9ecef;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: left;
+    appearance: none;
+    background: #fff url(https://d1unjqcospf8gs.cloudfront.net/assets/home/articles/icon-arrow-down-ea33c4b….svg) no-repeat 89% 50%;
 }
 
 
