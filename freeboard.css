@@ -1,0 +1,10 @@
+.board-table {
+    border-top: 1px solid #868e96;
+    border-bottom: 1px solid #868e96;
+    border-collapse: collapse;
+    font-weight: 500;
+}
+
+.board-table tr {
+    border-top: 1px solid #D1D3D8;
+}

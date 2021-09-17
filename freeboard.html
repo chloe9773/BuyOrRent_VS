@@ -4,7 +4,7 @@
 	<title>Home</title>
 	<link href="reset.css" rel="stylesheet"/>
 	<link href="common.css" rel="stylesheet"/>
-	<link href="login.css" rel="stylesheet"/>
+	<link href="freeboard.css" rel="stylesheet"/>
 	<script src="https://kit.fontawesome.com/64f7ef32af.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="common.js"></script>
@@ -45,40 +45,35 @@
 		</div>
 	</div>
 	<div class="main-content w-100">
-		<div class="login-box-wrap w-30 m-center mt-r-8 t-center bg-cream pb-r-4">
-			<h2 class="pt-r-4 font-32 mb-r-2">로그인</h2>
-			<div class="login-box-content mb-10">
-				<form class="w-80 m-center">
-					<ul class="login-input-wrap w-100 mb-r-1">
-						<li class="userid-wrap w-100 bg-white p-15 mb-10 border-r-6">
-							<input type="text" class="w-95 m-center" placeholder="이메일 주소 또는 아이디"/>
-						</li>
-						<p class="t-left mb-10 d-none"><i class="fas fa-exclamation-circle pr-5"></i>이메일 또는 아이디를 입력해주세요.</p>
-						<li class="userpw-wrap w-100 bg-white p-15 border-r-6 mb-10">
-							<input type="password" class="w-95 m-center" placeholder="비밀번호"/>
-						</li>
-						<p class="t-left d-none"><i class="fas fa-exclamation-circle pr-5"></i>비밀번호를 입력해세요.</p>
-						<p class="t-left d-none"><i class="fas fa-exclamation-circle pr-5"></i>입력하신 정보에 해당하는 계정을 찾을 수 없습니다.</p>
-					</ul>
-					<ul class="checkbox-wrap w-100">
-						<li class="f-left mr-10 mb-r-1">
-							<input type="checkbox" id="id-save" class="chkbox mr-5">
-							<label for="id-save">아이디 저장</label>
-						</li>
-						<li class="f-left">
-							<input type="checkbox" id="login-auto" class="chkbox mr-5">
-							<label for="login-auto">자동 로그인</label>
-						</li>
-					</ul>
-					<div class="clear t-center cursor w-100 ptb-10 border-r-50 bg-btn">로그인</div>
-				</form>
-			</div>
-			<div class="join-find w-40 m-center d-flex justify-bw font-14">
-				<div><a href="#">아이디 찾기</a></div>
-				<span>|</span>
-				<div><a href="#">비밀번호 재설정</a></div>
-				<span>|</span>
-				<div><a href="join.html">회원가입</a></div>
+		<div class="section-wrap bg-white">
+			<div class="board-wrap w-50 m-center pt-r-8">
+				<div class="board-top">
+					<h1 class="mb-40">자유게시판</h1>
+				</div>
+				<div class="board-content">
+					<table class="board-table w-100">
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>작성일</th>
+								<th>조회수</th>
+								<th>댓글</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="board-row">
+								<th>1</th>
+								<th>후참 신메뉴 나왔다며 ... </th>
+								<th>박정화</th>
+								<th>2021.09.17</th>
+								<th>1</th>
+								<th>2</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>

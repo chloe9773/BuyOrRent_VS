@@ -47,3 +47,7 @@ a:hover, a:active {
 hr {
     border: 1px solid rgba(233, 236, 239, 0.7);
 }
+
+th, tr{
+    font-weight: normal;
+}
