@@ -7,6 +7,9 @@
 .font-13 {
     font-size: 13px;
 }
+.font-14 {
+    font-size: 14px;
+}
 .font-15 {
     font-size: 15px;
 }
@@ -22,6 +25,9 @@
 .font-20 {
     font-size: 20px;
 }
+.font-28 {
+    font-size: 28px;
+}
 .font-32 {
     font-size: 32px;
 }
@@ -30,6 +36,11 @@
 }
 .font-r-logo {
     font-size: 1.5rem;
+}
+
+/* line-height */
+.line-h {
+    line-height: 1.36;
 }
 
 /* font-weight */
@@ -67,6 +78,9 @@
 .bg-cream {
     background-color: #FBF7F2;
 }
+.bg-btn {
+    background-color: #D4CCC2;
+}
 
 /* text-align */
 .t-center {
@@ -88,6 +102,9 @@
 }
 .w-30 {
 	width : 30%;	
+}
+.w-40 {
+	width : 40%;	
 }
 .w-50 {
 	width : 50%;	
@@ -129,14 +146,24 @@
 .p-30 {
     padding: 30px;
 }
+.pr-5 {
+    padding-right: 5px;
+}
 .pr-30 {
     padding-right: 30px;
+}
+.ptb-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .ptb-r-2{
     padding: 2rem 0;
 }
 .ptb-r-4 {
     padding: 4rem 0;
+}
+.ptb-r-4-2 {
+    padding: 4rem 2rem;
 }
 .pt-r-4{
     padding-top: 4rem;
@@ -207,6 +234,9 @@
 }
 .border-r-6 {
     border-radius: 6px;
+}
+.border-r-50 {
+    border-radius: 50px;
 }
 .border-round {
     border-radius: 50%;

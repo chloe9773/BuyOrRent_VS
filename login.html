@@ -11,43 +11,12 @@
 </head>
 <body>
 	<div class="following-top-wrap w-100 d-flex bg-white">
-		<div class="following-top-content d-flex justify-bw w-50 m-center">
+		<div class="following-top-content w-50 m-center">
 			<div class="following-top-left-wrap d-flex w-70">
 				<div class="following-top-left mr-30">
 					<a href="home.html">
 						<div class="following-top-title weight-700 font-r-logo">로고로고</div>
 					</a>
-				</div>
-				<div class="following-top-middle d-flex w-70">
-					<div class="following-top-search-wrap d-flex border-1 border-r-6 p-5 w-100 bg-white">
-						<input class="search w-95 gray-light"  placeholder="동네 이름, 물품명 등을 검색해보세요!"/>
-						<div class="search-btn">
-							<i class="fas fa-search gray-middle cursor"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="following-top-right d-flex">
-				<div class="following-top-menu p-30 cursor pos-r" onclick="toggleMenu();">
-					<span class="menu-title">메뉴</span>
-					<i class="fas fa-angle-down"></i>
-				</div>
-				<ul class="following-menu-drop bg-gray-v-light border-r-6 pos-ab d-none p-24">
-					<a href="login.html">
-						<li class="pb-12"><i class="fas fa-sign-in-alt mr-10"></i>로그인</li>
-					</a>
-					<a href="rent.html">
-						<li class="pb-12"><i class="fas fa-truck-loading mr-10"></i>대여</li>
-					</a>
-					<a href="sell.html">
-						<li class="pb-12"><i class="fas fa-hand-holding-usd mr-10"></i>중고거래</li>
-					</a>
-					<a href="freeboard.html">
-						<li class="pb-12"><i class="fas fa-comments mr-10"></i>자유게시판</li>
-					</a>
-				</ul>
-				<div class="following-top-chat">
-					<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
 				</div>
 			</div>
 		</div>
@@ -55,18 +24,21 @@
 	<div class="main-content w-100">
 		<div class="login-box-wrap w-30 m-center mt-r-8 t-center bg-cream pb-r-4">
 			<h2 class="pt-r-4 font-32 mb-r-2">로그인</h2>
-			<div class="login-box-content">
+			<div class="login-box-content mb-10">
 				<form class="w-80 m-center">
 					<ul class="login-input-wrap w-100 mb-r-1">
 						<li class="userid-wrap w-100 bg-white p-15 mb-10 border-r-6">
 							<input type="text" class="w-95 m-center" placeholder="이메일 주소 또는 아이디"/>
 						</li>
-						<li class="userpw-wrap w-100 bg-white p-15 border-r-6">
+						<p class="t-left mb-10 d-none"><i class="fas fa-exclamation-circle pr-5"></i>이메일 또는 아이디를 입력해주세요.</p>
+						<li class="userpw-wrap w-100 bg-white p-15 border-r-6 mb-10">
 							<input type="password" class="w-95 m-center" placeholder="비밀번호"/>
 						</li>
+						<p class="t-left d-none"><i class="fas fa-exclamation-circle pr-5"></i>비밀번호를 입력해세요.</p>
+						<p class="t-left d-none"><i class="fas fa-exclamation-circle pr-5"></i>입력하신 정보에 해당하는 계정을 찾을 수 없습니다.</p>
 					</ul>
 					<ul class="checkbox-wrap w-100">
-						<li class="f-left mr-10">
+						<li class="f-left mr-10 mb-r-1">
 							<input type="checkbox" id="id-save" class="chkbox mr-5">
 							<label for="id-save">아이디 저장</label>
 						</li>
@@ -75,8 +47,15 @@
 							<label for="login-auto">자동 로그인</label>
 						</li>
 					</ul>
-					<div class="clear t-center cursor w-100">로그인</div>
+					<div class="clear t-center cursor w-100 ptb-10 border-r-50 bg-btn">로그인</div>
 				</form>
+			</div>
+			<div class="join-find w-40 m-center d-flex justify-bw font-14">
+				<div><a href="#">아이디 찾기</a></div>
+				<span>|</span>
+				<div><a href="#">비밀번호 재설정</a></div>
+				<span>|</span>
+				<div><a href="join.html">회원가입</a></div>
 			</div>
 		</div>
 	</div>
