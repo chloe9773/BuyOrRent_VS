@@ -271,6 +271,9 @@
 .f-left {
     float: left;
 }
+.f-right {
+    float: right;
+}
 .clear {
     clear: both;
 }

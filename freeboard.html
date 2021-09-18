@@ -28,6 +28,9 @@
 					<a href="login.html">
 						<li class="pb-12"><i class="fas fa-sign-in-alt mr-10"></i>로그인</li>
 					</a>
+					<a href="mypage.html" class="d-none">
+						<li class="pb-12"><i class="fas fa-address-card mr-10"></i>마이페이지</li>
+					</a>
 					<a href="rent.html">
 						<li class="pb-12"><i class="fas fa-truck-loading mr-10"></i>대여</li>
 					</a>
@@ -36,6 +39,9 @@
 					</a>
 					<a href="freeboard.html">
 						<li class="pb-12"><i class="fas fa-comments mr-10"></i>자유게시판</li>
+					</a>
+					<a href="#" class="d-none">
+						<li class="pb-12"><i class="fas fa-sign-out-alt mr-10"></i>로그아웃</li>
 					</a>
 				</ul>
 				<div class="following-top-chat">
@@ -50,29 +56,131 @@
 				<div class="board-top">
 					<h1 class="mb-40">자유게시판</h1>
 				</div>
+				<div class="board-extra d-flex justify-bw mb-4">
+					<div class="extra-left">
+						<span class="article-total font-15">총 10건의 게시물</span>
+					</div>
+					<div class="extra-right d-flex">
+						<select name="search-keyword">
+							<option value="title">제목</option>
+							<option value="writer">작성자</option>
+							<option value="all">제목+작성자</option>
+						</select>
+						<div class="search-wrap d-flex mr-10">
+							<input type="text" />
+							<div type="submit" class="search-submit-btn cursor">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<div class="write-btn">
+							<a href="article-write.html">
+								<i class="fas fa-pencil-alt"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 				<div class="board-content">
-					<table class="board-table w-100">
+					<table class="board-table w-100 mb-40">
 						<thead>
-							<tr>
-								<th>번호</th>
-								<th>제목</th>
-								<th>작성자</th>
-								<th>작성일</th>
-								<th>조회수</th>
-								<th>댓글</th>
+							<tr class="bg-gray-v-light">
+								<th width="10%">번호</th>
+								<th class="">제목</th>
+								<th width="15%">작성자</th>
+								<th width="20%">작성일</th>
+								<th width="10%">조회수</th>
+								<th width="10%">댓글</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr class="board-row">
-								<th>1</th>
-								<th>후참 신메뉴 나왔다며 ... </th>
-								<th>박정화</th>
-								<th>2021.09.17</th>
-								<th>1</th>
-								<th>2</th>
+							<tr class="board-row t-center">
+								<td>1</td>
+								<td class="t-left">
+									<a href="article-detail.html" class="">후참 신메뉴 나왔다며 ... </a>
+								</td>
+								<td>
+									<a href="#" class="">박정화</a>
+								</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>2</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>3</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>4</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>5</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>1</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>2</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>3</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>4</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr class="board-row t-center">
+								<td>5</td>
+								<td class="t-left">후참 신메뉴 나왔다며 ... </td>
+								<td>박정화</td>
+								<td>2021.09.17</td>
+								<td>1</td>
+								<td>2</td>
 							</tr>
 						</tbody>
 					</table>
+					<div class="page-btn-wrap t-center mb-r-4">
+						버튼 버튼 버튼 버튼 버튼
+					</div>
 				</div>
 			</div>
 		</div>
