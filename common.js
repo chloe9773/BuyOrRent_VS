@@ -55,3 +55,7 @@ function replyCommentClose(classNum) {
 function optToggle(classNum) {
     $(".opt-" + classNum).toggle();
 }
+
+function cmtBoxToggle() {
+    $(".board-main-bottom").toggle();
+}

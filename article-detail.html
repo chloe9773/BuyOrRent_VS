@@ -66,11 +66,16 @@
 							<button class="btn-to-previos">
 								<a href="#">이전글</a>
 							</button>
+							<!-- 첫 게시글에는 보이지 않게 -->
+							<button class="btn-to-previos">
+								<a href="#">다음글</a>
+							</button>
 						</div>
 						<div class="btn-right">
 							<button class="btn-to-reply">
 								<a href="#">답글</a>
 							</button>
+							<!-- 게시글 수정 가능자는 활성화 되어 보이게 -->
 							<button class="btn-to-modify" disabled>
 								<a href="#">수정</a>
 							</button>
@@ -85,7 +90,7 @@
 								<span class="title-sub-item">21.09.24 19:56</span>
 								<span class="title-sub-item">댓글
 									<span class="highlight">
-										<a href="#">0</a>
+										<a href="#comment-box">2</a>
 									</span>
 								</span>
 							</div>
@@ -93,7 +98,7 @@
 						<div class="board-main-middle pt-r-4">
 							<div class="font-14">내용 내용 내용</div>
 							<div class="mt-r-2 mb-30">
-								<button>
+								<button onclick="cmtBoxToggle();">
 									<span>댓글</span>
 									<span class="highlight">0</span>
 								</button>
@@ -103,7 +108,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="board-main-bottom bg-gray-v-light w-100 p-24 mb-r-4">
+						<div id="comment-box" class="board-main-bottom bg-gray-v-light p-24 mb-r-4">
 							<div class="comments-wrap">
 								<div class="comment-wrap mb-30">
 									<div class="comment-1 mb-10">
@@ -114,6 +119,7 @@
 											</div>
 											<div class="comment-info-right icon-color ">
 												<span class="mr-5">답글</span>
+												<!-- 수정 권한 없는 유저들에게는 신고 버튼으로 -->
 												<span class="opt-open-1" onclick="optToggle(1);"><i class="fas fa-ellipsis-v cursor"></i></span>
 												<div class="opt opt-1 d-none">
 													<div class="opt-mod">수정</div>
@@ -215,6 +221,12 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="to-top font-13 icon-color t-right">
+					<a href="#">
+						<i class="fas fa-angle-up"></i>
+						<span>맨위로</span>
+					</a>
 				</div>
 			</div>
 		</div>

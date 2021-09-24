@@ -20,6 +20,10 @@ button {
     background-color: transparent;
 }
 
+button:disabled {
+    pointer-events: none;
+}
+
 input {
     border: 0;
     font-size: 16px;
@@ -80,3 +84,5 @@ textarea::placeholder {
 textarea:focus {
     outline: none;
 }
+
+
