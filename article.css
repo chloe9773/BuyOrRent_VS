@@ -1,0 +1,86 @@
+.board-table {
+    border-top: 1px solid #868e96;
+    border-bottom: 1px solid #868e96;
+    border-collapse: collapse;
+    font-weight: 500;
+}
+
+.board-table tr {
+    border-top: 1px solid #D1D3D8;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #D1D3D8;
+    border-left: 1px solid #D1D3D8;
+}
+
+tr:first-child>td{
+    border-top: 1px solid #D1D3D8;
+}
+
+td:last-child {
+    border-right: 1px solid #D1D3D8;
+}
+
+button {
+    background-color: #F1F3F5;
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btn-bottom {
+    border-bottom: 1px solid #efefef;
+}
+
+.title-sub-item {
+    margin-right: 10px;
+    font-size: 13px;
+    color: #868e96;
+}
+
+.comment-edit-wrap {
+    padding: 10px 15px;
+}
+
+.comment {
+    border-bottom: 1px solid #efefef;
+}
+
+.comment>p{
+    word-break: keep-all;
+}
+
+.page-btn {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.page-btn:hover,  .comment-reply:hover{
+    text-decoration: underline;
+}
+
+.page-btn.active {
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+.opt {
+    z-index: 9999999;
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+    padding: 4px;
+}
+
+.opt-mod, .opt-delete {
+    padding: 4px 8px;
+}

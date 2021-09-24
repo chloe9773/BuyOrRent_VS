@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /* font-size */
+.font-11 {
+    font-size: 11px;
+}
 .font-12 {
     font-size: 12px;
 }
@@ -55,6 +58,9 @@
 .gray-light {
     color: #D1D3D8;
 }
+.gray {
+    color: #c1c1c1;
+}
 .gray-middle {
     color: #868e96;
 }
@@ -63,6 +69,12 @@
 }
 .white {
     color: #FFF;
+}
+.highlight {
+    color: #ff5656;
+}
+.icon-color {
+    color: #666666;
 }
 
 /* bg-color */
@@ -80,6 +92,9 @@
 }
 .bg-btn {
     background-color: #D4CCC2;
+}
+.bg-highlight {
+    background-color: #ff5656;
 }
 
 /* text-align */
@@ -180,6 +195,9 @@
 .pb-3 {
     padding-bottom: 3px;
 }
+.pb-10 {
+    padding-bottom: 10px;
+}
 .pb-12 {
     padding: 12px;
 }
@@ -202,6 +220,9 @@
 }
 .mb-4 {
     margin-bottom: 4px;
+}
+.mb-5 {
+    margin-bottom: 5px;
 }
 .mb-10 {
     margin-bottom: 10px;
@@ -265,6 +286,14 @@
 }
 .d-none {
 	display : none;
+}
+
+.table {
+    display: table;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* float */
@@ -335,4 +364,7 @@
     background: #fff url(https://d1unjqcospf8gs.cloudfront.net/assets/home/articles/icon-arrow-down-ea33c4b….svg) no-repeat 89% 50%;
 }
 
+.comment-max {
+    color: #c1c1c1;
+}
 
