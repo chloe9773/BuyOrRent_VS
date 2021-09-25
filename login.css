@@ -1,6 +1,23 @@
 @charset "UTF-8";
 
-.chkbox {
-	width: 20px;
-	height: 20px;
+.login-input-wrap {
+	border: 1px solid #D6D6D6;
+	padding: 10px;
+}
+
+.login-input {
+	width: 92%;
+}
+
+.login-submit-btn {
+	width: 100%;
+	background-color: #D4CCC2;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.remember-id {
+	width: 15px;
+	height: 15px;
 }

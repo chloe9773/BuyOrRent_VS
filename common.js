@@ -67,3 +67,33 @@ function hideNoti() {
         $(".noti").removeClass("d-none");
     }
 }
+
+function inputReset(className) {
+    $("."+className).val('');
+    $("."+className+"-erase-btn").addClass("d-hidden");
+}
+
+function chkInputVal(className) {
+    var input = $("."+className).val();
+    alert(input);
+
+    if(input.length > 0) {
+        $("."+className+"-erase-btn").removeClass("d-hidden");
+    } else {
+        $("."+className+"-erase-btn").addClass("d-hidden");
+    }
+}
+
+$(document).on('keyup','.login-input', function(e){
+    if($(".userid").val().length > 0) {
+        $(".userid-erase-btn").removeClass("d-hidden");
+    } else {
+        $(".userid-erase-btn").addClass("d-hidden");
+    }
+
+    if($(".userpw").val().length > 0) {
+        $(".userpw-erase-btn").removeClass("d-hidden");
+    } else {
+        $(".userpw-erase-btn").addClass("d-hidden");
+    }
+});
