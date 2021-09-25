@@ -206,6 +206,9 @@
 .m-center {
     margin: 0 auto;
 }
+.ml-5 {
+    margin-left: 5px;
+}
 .mr-5 {
     margin-right: 5px;
 }
@@ -262,6 +265,12 @@
 .border-1 {
     border: 1px solid #D1D3D8;
 }
+.border-1-dark {
+    border: 1px solid #495057;
+}
+.border-r-2 {
+    border-radius: 2px;
+}
 .border-r-6 {
     border-radius: 6px;
 }
@@ -310,6 +319,9 @@
 /* display related */
 .justify-bw {
 	justify-content : space-between;
+}
+.justify-center {
+	justify-content : center;
 }
 .align-end {
     align-items: flex-end;

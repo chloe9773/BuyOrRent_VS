@@ -59,3 +59,11 @@ function optToggle(classNum) {
 function cmtBoxToggle() {
     $(".board-main-bottom").toggle();
 }
+
+function hideNoti() {
+    if($("#notiChk").prop("checked")) {
+        $(".noti").addClass("d-none");
+    } else {
+        $(".noti").removeClass("d-none");
+    }
+}
