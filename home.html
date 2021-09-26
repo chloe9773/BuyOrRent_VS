@@ -9,8 +9,36 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="common.js"></script>
 	<script type="text/javascript" src="home.js"></script>
+	<script>
+		const body = document.querySelector('body');
+		const modal = document.querySelector('.modal');
+		const btnOpenPopup = document.querySelector('.modal-open-btn');
+  
+		btnOpenPopup.addEventListener('click', () => {
+		  modal.classList.toggle('show');
+  
+		  if (modal.classList.contains('show')) {
+			body.style.overflow = 'hidden';
+		  }
+		});
+  
+		modal.addEventListener('click', (event) => {
+		  if (event.target === modal) {
+			modal.classList.toggle('show');
+  
+			if (!modal.classList.contains('show')) {
+			  body.style.overflow = 'auto';
+			}
+		  }
+		});
+	  </script>
 </head>
 <body>
+	<div class="modal">
+		<div class="modal-content">
+			모달 모달 모달
+		</div>
+	</div>
 	<div class="following-top-wrap w-100 d-flex bg-white">
 		<div class="following-top-content d-flex justify-bw w-50 m-center">
 			<div class="following-top-left-wrap d-flex w-70">
@@ -370,6 +398,11 @@
 					<a href="sell.html"><u>인기매물 더 보기</u></a>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="follow-navigation icon-color">
+		<div class="to-write modal-open-btn">
+			<i class="fas fa-plus-circle"></i>
 		</div>
 	</div>
 	<footer class="footer bg-gray-middle white ptb-r-4">
