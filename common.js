@@ -136,3 +136,26 @@ function priceSuggestionBtn(chk) {
         $("input:radio[name='price']:radio[value='price-suggest']").prop('checked', false);
     }
 }
+
+$(window).scroll(function(){
+    var height = $(document).scrollTop();
+    if(height >= 220) {
+        $("#home-side-menu").show();
+    } else {
+        $("#home-side-menu").hide();
+    }
+});
+
+function modalLayer() {
+    $("#modal").show();
+    $('body').css("overflow", "hidden");
+    $(".modal-opt-btn").show();
+
+    // $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+    // $('body').on('scroll touchmove mousewheel', function(event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     return false;
+    // });
+}
+

@@ -89,13 +89,14 @@
 								<option value="">카테고리</option>
 							</select>
 						</div>
-						<div class="price-warp">
+						<div class="price-wrap">
 							<input type="text" class="price-input" maxlength="" autocomplete="off" placeholder="₩ 가격 (선택사항)"/>
 							<input type="radio" name="price" class="price-suggestion d-none" value="price-suggest"/>
+							<!-- 대여 게시글의 경우 대여일 지정 select 추가하기 -->
 							<span class="circle-default cursor" onclick="priceSuggestionBtn(true);">
 								<i class="far fa-circle"></i>
 							</span>
-							<span class="circle-chk cursor d-none" onclick="priceSuggestionBtn(false);">
+							<span class="circle-chk cursor d-none highlight" onclick="priceSuggestionBtn(false);">
 								<i class="fas fa-check-circle"></i>
 							</span>
 							<span class="">가격제안 받기</span>

@@ -34,7 +34,7 @@
 	  </script>
 </head>
 <body>
-	<div class="modal">
+	<div id="modal" class="modal">
 		<div class="modal-content">
 			모달 모달 모달
 		</div>
@@ -400,10 +400,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="follow-navigation icon-color">
+	<div id="home-side-menu" class="follow-navigation icon-color d-none" onclick="modalLayer();">
 		<div class="to-write modal-open-btn">
 			<i class="fas fa-plus-circle"></i>
 		</div>
+	</div>
+	<div class="modal-opt-btn d-none">
+		<i class="fas fa-pen-square"></i>
 	</div>
 	<footer class="footer bg-gray-middle white ptb-r-4">
 		<div class="footer-wrap w-50 m-center">푸터푸터푸터푸터푸터푸터</div>
