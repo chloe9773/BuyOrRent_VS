@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<!-- 답글도 동일하게 사용하기 -->
+<head>
+	<title>Home</title>
+	<link href="reset.css" rel="stylesheet"/>
+	<link href="common.css" rel="stylesheet"/>
+	<link href="article.css" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/64f7ef32af.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+	<div class="following-top-wrap w-100 d-flex bg-white">
+		<div class="following-top-content d-flex justify-bw w-50 m-center">
+			<div class="following-top-left-wrap">
+				<div class="following-top-left">
+					<a href="home.html">
+						<div class="following-top-title weight-700 font-r-logo">로고로고</div>
+					</a>
+				</div>
+			</div>
+			<div class="following-top-right d-flex">
+				<div class="following-top-menu p-30 cursor pos-r" onclick="toggleMenu();">
+					<span class="menu-title">메뉴</span>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				<ul class="following-menu-drop bg-gray-v-light border-r-6 pos-ab d-none p-24">
+					<a href="login.html">
+						<li class="pb-12"><i class="fas fa-sign-in-alt mr-10"></i>로그인</li>
+					</a>
+					<a href="mypage.html" class="d-none">
+						<li class="pb-12"><i class="fas fa-address-card mr-10"></i>마이페이지</li>
+					</a>
+					<a href="rent.html">
+						<li class="pb-12"><i class="fas fa-truck-loading mr-10"></i>대여</li>
+					</a>
+					<a href="sell.html">
+						<li class="pb-12"><i class="fas fa-hand-holding-usd mr-10"></i>중고거래</li>
+					</a>
+					<a href="freeboard.html">
+						<li class="pb-12"><i class="fas fa-comments mr-10"></i>자유게시판</li>
+					</a>
+					<a href="#" class="d-none">
+						<li class="pb-12"><i class="fas fa-sign-out-alt mr-10"></i>로그아웃</li>
+					</a>
+				</ul>
+				<div class="following-top-chat">
+					<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content w-100">
+		<div class="section-wrap bg-white">
+			<div class="board-wrap w-50 m-center pt-r-8">
+				<div class="board-top">
+					<a href="sell.html" class="sell">
+						<h1 class="mb-40">중고거래 글쓰기</h1>
+					</a>
+					<a href="rent.html" class="rent d-none">
+						<h1 class="mb-40">대여 글쓰기</h1>
+					</a>
+				</div>
+				<hr class="mb-16"/>
+				<div class="board-content">
+					<div class="photo-upload-wrap d-flex mb-16">
+						<input type="file" id="file" class="fileUpload d-none" multiple/>
+						<div class="item-photo-wrap icon-color t-center cursor" onclick="fileUpload();">
+							<div class="item-photo-box">
+								<div class="">
+									<i class="fas fa-camera"></i>
+								</div>
+								<div class="photo-count-wrap font-13">
+									<span id="photo-count" class="photo-count mr-5">0</span>
+									<span class="mr-5">/</span>
+									<span class="photo-total">5</span>
+								</div>
+							</div>
+						</div>
+						<div class="photo-preview-wrap d-flex"></div>
+					</div>
+					<div class="title-wrap pb-10 mb-10">
+						<input type="text" class="title font-20" maxlength="" autocomplete="off" placeholder="제목을 입력하세요."/>
+					</div>
+					<div class="item-info-wrap font-16 d-flex justify-bw pb-10 mb-10">
+						<div class="category-wrap">
+							<select name="" class="category-select">
+								<option value="">카테고리</option>
+							</select>
+						</div>
+						<div class="price-warp">
+							<input type="text" class="price-input" maxlength="" autocomplete="off" placeholder="₩ 가격 (선택사항)"/>
+							<input type="radio" name="price" class="price-suggestion d-none" value="price-suggest"/>
+							<span class="circle-default cursor" onclick="priceSuggestionBtn(true);">
+								<i class="far fa-circle"></i>
+							</span>
+							<span class="circle-chk cursor d-none" onclick="priceSuggestionBtn(false);">
+								<i class="fas fa-check-circle"></i>
+							</span>
+							<span class="">가격제안 받기</span>
+						</div>
+					</div>
+					<div class="editor">
+						<textarea placeholder="ㅇㅇ동에 올릴 게시글 내용을 작성해주세요."></textarea>
+					</div>
+					<div class="btn-grp d-flex justify-bw pb-r-4">
+						<div class="btn-grp-left">
+							<a href="freeboard.html">
+								<button class="cancel bg-white">취소</button>
+							</a>
+						</div>
+						<div class="btn-grp-right">
+							<button class="submit bg-highlight white">등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer bg-gray-middle white ptb-r-4">
+		<div class="footer-wrap w-50 m-center">푸터푸터푸터푸터푸터푸터</div>
+	</footer>
+</body>
+</html>

@@ -26,6 +26,33 @@ function changeRegion(type, region) {
 function fileUpload() {
     $(".fileUpload").click();
 }
+$(document).on("change","#file",function(){
+    if($("#file")[0].files.length != 0) {
+        ext = $("#file").val().split('.').pop().toLowerCase(); //확장자
+
+        if($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+            //resetFormElement($("#file")); //폼 초기화
+            alert('이미지 파일이 아닙니다. (gif, png, jpg, jpeg 만 업로드 가능)');
+        } else {
+            img = "";
+            for(i = 0; i < $("#file")[0].files.length; i++) {
+                img += "<div class='photo-preview'><img class='preview preview"+i+"' src=#/></div>";
+            }
+
+            $('.photo-preview-wrap').html(img);
+            for(i = 0; i < $("#file")[0].files.length; i++) {
+                file = $('#file').prop("files")[i];
+                blobURL = window.URL.createObjectURL(file);
+                $('.preview' + i).attr('src', blobURL);
+                $('.photo-preview').slideDown(); //업로드한 이미지 미리보기 
+                $('#file').slideUp(); //파일 양식 감춤
+            }
+
+            $("#photo-count").html($("#file")[0].files.length);
+        }
+    }
+
+});
 
 function countChar() {
     var text = $(".textarea").val();
@@ -98,4 +125,14 @@ $(document).on('keyup','.login-input', function(e){
     }
 });
 
-
+function priceSuggestionBtn(chk) {
+    if(chk == true) {
+        $(".circle-default").addClass("d-none");
+        $(".circle-chk").removeClass("d-none");
+        $("input:radio[name='price']:radio[value='price-suggest']").prop('checked', true);
+    } else {
+        $(".circle-default").removeClass("d-none");
+        $(".circle-chk").addClass("d-none");
+        $("input:radio[name='price']:radio[value='price-suggest']").prop('checked', false);
+    }
+}
