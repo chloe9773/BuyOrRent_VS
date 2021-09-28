@@ -146,16 +146,32 @@ $(window).scroll(function(){
     }
 });
 
-function modalLayer() {
-    $("#modal").show();
-    $('body').css("overflow", "hidden");
-    $(".modal-opt-btn").show();
+function modalLayer(bool) {
+    if(bool == true) {
+        $("#modal").show();
+        $('body').css("overflow", "hidden");
+        $(".modal-opt-btn").show();
+        $("#opt-btn-open").addClass("d-none");
+        $("#opt-btn-close").removeClass("d-none");
+    } else {
+        $("#modal").hide();
+        $('body').css("overflow", "scroll");
+        $(".modal-opt-btn").hide();
+        $("#opt-btn-close").addClass("d-none");
+        $("#opt-btn-open").removeClass("d-none");
+    }
+}
 
-    // $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-    // $('body').on('scroll touchmove mousewheel', function(event) {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //     return false;
-    // });
+/* join page */
+function showHidePw(choice) {
+    if(choice == 'show') {
+        $('#show-pw').addClass('d-none');
+        $('#hide-pw').removeClass('d-none');
+        $('.passwd').prop('type', 'text');
+    } else{
+        $('#hide-pw').addClass('d-none');
+        $('#show-pw').removeClass('d-none');
+        $('.passwd').prop('type', 'password');
+    }
 }
 

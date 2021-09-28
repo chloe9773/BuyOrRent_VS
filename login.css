@@ -21,3 +21,26 @@
 	width: 15px;
 	height: 15px;
 }
+
+body {
+	overflow: hidden;
+}
+
+.userid-wrap, .userpw-wrap {
+	background-color: rgba(236, 236, 236, 0.5);
+}
+
+.userid-wrap input, .userpw-wrap input {
+	background-color: rgba(236, 236, 236, 0.1);
+	width: 80%;
+}
+
+.register-box-wrap {
+	position: fixed;
+	top: calc(100% - 75%);
+	right: calc(100% - 75%);
+}
+
+/* .userid-desc i, .userpw-desc i {
+	padding-left: 15px;
+} */

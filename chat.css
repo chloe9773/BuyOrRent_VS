@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.chat-head {
+	border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.right-wrap {
+	border-left: 1px solid #E0E0E0;
+	border-right: 1px solid #E0E0E0;
+}
+
+.profile-wrap {
+	border-left: 1px solid #DCDDE0;
+	border-right: 1px solid #DCDDE0;
+}
+
+.username-wrap, .unread-wrap {
+	border-bottom: 1px solid #EFEFF0;
+}

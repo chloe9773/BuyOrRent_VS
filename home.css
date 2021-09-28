@@ -6,6 +6,8 @@
     bottom: 10rem;
     font-size: 30px;
     cursor: pointer;
+    z-index: 9999999;
+    text-align: right;
 }
 
 .modal {
@@ -18,12 +20,28 @@
     z-index: 9999;
     display: none;
 }
+
+.modal-opt {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
+
 .modal-opt-btn {
     z-index: 9999999999999;
-    font-size: 30px;
-    position: fixed;
-    right: 15%;
-    bottom: 13rem;
+} 
+
+.modal-opt-btn i, #opt-btn-close i {
+    margin-bottom: 2px;
+    border-radius: 50%;
+    background-color: #D4CCC2;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+    
 }
 /* #modal .modal-window {
     background: rgba( 69, 139, 197, 0.70 );

@@ -34,11 +34,6 @@
 	  </script>
 </head>
 <body>
-	<div id="modal" class="modal">
-		<div class="modal-content">
-			모달 모달 모달
-		</div>
-	</div>
 	<div class="following-top-wrap w-100 d-flex bg-white">
 		<div class="following-top-content d-flex justify-bw w-50 m-center">
 			<div class="following-top-left-wrap d-flex w-70">
@@ -82,7 +77,9 @@
 					</a>
 				</ul>
 				<div class="following-top-chat">
-					<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
+					<a href="chat.html">
+						<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -400,14 +397,31 @@
 			</div>
 		</div>
 	</div>
-	<div id="home-side-menu" class="follow-navigation icon-color d-none" onclick="modalLayer();">
+	<div id="home-side-menu" class="follow-navigation d-none">
+		<div class="modal-opt-btn d-none">
+			<div class="modal-opt-rent">
+				<a href="item-upload.html">
+					<span class="modal-opt">대여 글쓰기</span>
+					<i class="fas fa-truck-loading"></i>
+				</a>
+			</div>
+			<div class="modal-opt-sell">
+				<a href="item-upload.html">
+					<span class="modal-opt">중고거래 글쓰기</span>
+					<i class="fas fa-hand-holding-usd"></i>
+				</a>
+			</div>
+		</div>
 		<div class="to-write modal-open-btn">
-			<i class="fas fa-plus-circle"></i>
+			<span id="opt-btn-open">
+				<i class="fas fa-plus-circle" onclick="modalLayer(true);"></i>
+			</span>
+			<span id="opt-btn-close" class="d-none">
+				<i class="fas fa-minus btn-color" onclick="modalLayer(false);"></i>
+			</span>
 		</div>
 	</div>
-	<div class="modal-opt-btn d-none">
-		<i class="fas fa-pen-square"></i>
-	</div>
+	<div id="modal" class="modal"></div>
 	<footer class="footer bg-gray-middle white ptb-r-4">
 		<div class="footer-wrap w-50 m-center">푸터푸터푸터푸터푸터푸터</div>
 	</footer>
