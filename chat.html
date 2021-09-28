@@ -23,34 +23,229 @@
 	</div>
 	<div class="page-wrap w-100 mt-r-5">
 		<div class="chat-wrap w-60 m-center d-flex">
-			<div class="left-wrap d-flex w-30">
+			<div class="left-wrap d-flex w-35 h-100vh">
 				<div class="profile-wrap bg-profile w-20">
 					프로필
 				</div>
 				<div class="chat-wrap bg-white w-80">
-					<div class="username-wrap">
-						<span class="username">해봄이</span>
+					<div class="username-wrap p-20">
+						<span class="username font-16 weight-700">해봄이</span>
 					</div>
 					<div class="unread-wrap t-right">
-						<div class="unread">
-							<span>안읽은 메세지만 보기</span>
-							<span class="">
-								<i class="far fa-check-circle"></i>
+						<div class="unread p-10 icon-color">
+							<span class="font-13">안읽은 메세지만 보기</span>
+							<input type="radio" name="unread" class="unread-radio-btn d-none" value="unread"/>
+							<span class="circle-default cursor" onclick="circleChkBtn(true, 'unread','unread');">
+								<i class="ico-circle far fa-check-circle"></i>
 							</span>
-							<span class="d-none">
-								<i class="fas fa-check-circle"></i>
+							<span class="circle-chk cursor d-none highlight" onclick="circleChkBtn(false, 'unread','unread');">
+								<i class="ico-circle fas fa-check-circle"></i>
 							</span>
 						</div>
 					</div>
 					<div class="chatroom-wrap">
-						<div class="chat-1">
-							
+						<div class="chat-box chat-1 d-flex cursor" onmouseenter="deleteDNone('chat-opt-btn-1');" onmouseleave="addDNone('chat-opt-btn-1');">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+								<div class="chat-opt-wrap">
+									<div class="chat-opt-btn chat-opt-btn-1 d-none chat-in" onclick="chatLeaveOpt('chat-leave-1','chat-1');">
+										<i class="fas fa-ellipsis-h chat-in"></i>
+									</div>
+									<div class="chat-in chat-leave chat-leave-1 d-none">
+										<span class="chat-in">채팅방 나가기</span>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="chat-2"></div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>
+						<div class="chat-box chat-2 d-flex">
+							<div class="user-img-wrap mr-8 w-20">
+
+							</div>
+							<div class="chat-prev-wrap w-80">
+								<div class="prev-top mb-2">
+									<span class="username font-13 weight-700 mr-3">백현이</span>
+									<span class="userposition font-12 chat-sub mr-3">백현동</span>
+									<span class="chat-sub font-12 mr-3">·</span>
+									<span class="time font-12 chat-sub">09월 29일</span>
+								</div>
+								<div class="prev-bottom">
+									<p class="prev-content font-13">백현이님, 백현동 근처에서 쉽고 편하게...어쩌구</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="footer">
+						푸터푸터푸터푸터
 					</div>
 				</div>
 			</div>
-			<div class="right-wrap bg-white w-70">채팅내용</div>
+			<div class="right-wrap chat-before bg-white w-65 t-center table">
+				<div class="ico-chat-wrap table-cell">
+					<div class="chat-icon">
+						<i class="fas fa-comments"></i>
+					</div>
+					<div class="chat-direction mt-30 font-14">
+						채팅할 상대를 선택해주세요.
+					</div>
+				</div>
+			</div>
+			<div class="right-wrap chat-after bg-white w-65 d-none">
+			</div>
 		</div>
 	</div>
 </body>

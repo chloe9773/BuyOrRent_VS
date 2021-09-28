@@ -125,15 +125,16 @@ $(document).on('keyup','.login-input', function(e){
     }
 });
 
-function priceSuggestionBtn(chk) {
+/* radiobtn 체크용 */
+function circleChkBtn(chk, name, val) {
     if(chk == true) {
         $(".circle-default").addClass("d-none");
         $(".circle-chk").removeClass("d-none");
-        $("input:radio[name='price']:radio[value='price-suggest']").prop('checked', true);
+        $("input:radio[name="+name+"]:radio[value="+val+"]").prop('checked', true);
     } else {
         $(".circle-default").removeClass("d-none");
         $(".circle-chk").addClass("d-none");
-        $("input:radio[name='price']:radio[value='price-suggest']").prop('checked', false);
+        $("input:radio[name="+name+"]:radio[value="+val+"]").prop('checked', false);
     }
 }
 
@@ -174,4 +175,30 @@ function showHidePw(choice) {
         $('.passwd').prop('type', 'password');
     }
 }
+
+/* delete d-none by classname */
+function deleteDNone(classname) {
+    $("." + classname).removeClass("d-none");
+}
+
+/* add d-none by classname */
+function addDNone(classname) {
+    $("." + classname).addClass("d-none");
+}
+
+/* showing chatroom leave option */
+function chatLeaveOpt(optName, btnName){
+    deleteDNone(optName);
+    $("." + btnName).removeAttr("onmouseleave");
+
+    // $('html').click(function(e){ 
+    //     if(!$(e.target).hasClass('chat-in')){ 
+    //         $("." + btnName).bind("onmouseleave", function() {
+    //             addDNone(btnName);
+    //         });
+    //         addDNone(optName);
+    //     }
+    // });
+}
+
 

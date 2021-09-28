@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+body {
+	overflow: hidden;
+}
+
+.chat-sub {
+	color: #999DA5;
+}
+
 .chat-head {
 	border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
@@ -17,4 +25,88 @@
 
 .username-wrap, .unread-wrap {
 	border-bottom: 1px solid #EFEFF0;
+}
+
+.chat-box {
+	padding: 15px 20px;
+	border-bottom: 1px solid #EFEFF0;
+}
+
+.user-img-wrap {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: lightcoral;
+}
+
+.ico-circle {
+	vertical-align: bottom;
+}
+
+.prev-content {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+
+.chat-box:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chat-icon {
+	color: #DCDEE3;
+	font-size: 96px;
+}
+
+.chatroom-wrap {
+	overflow-y: auto;
+	height: 75%;
+}
+
+.chat-prev-wrap {
+	position: relative;
+}
+
+.chat-opt-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	background-color: #fff;
+	border: 1px solid #EFEFF0;
+	position: absolute;
+	right: 5%;
+	bottom: 15%;
+}
+
+.chat-leave {
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #EFEFF0;
+	position: absolute;
+	background-color: #fff;
+	right: -20px;
+	z-index: 9999999;
+	bottom: -70px;
+	box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px, rgb(255 255 255 / 50%) 0px 0px 0px 1px inset;
+}
+
+.chat-leave::after {
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	position: absolute;
+	content: "";
+	bottom: 51px;
+	transform: rotate(45deg);
+	right: 37px;
+	border-left: 1px solid #EFEFF0;
+	border-top: 1px solid #EFEFF0;
+}
+
+.footer {
+	padding: 20px 10px;
 }
