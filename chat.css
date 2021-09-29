@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .chat-sub {
@@ -62,7 +62,6 @@ body {
 
 .chatroom-wrap {
 	overflow-y: auto;
-	height: 75%;
 }
 
 .chat-prev-wrap {
@@ -139,7 +138,6 @@ body {
 
 .chat-content-wrap {
 	overflow-y: auto;
-	height: 80%;
 }
 
 .chat-input-wrap {
@@ -150,7 +148,6 @@ body {
 .chat-input-box {
 	border: 1px solid #000;
 	border-radius: 8px;
-	height: 70%;
 }
 
 .right-wrap .chat-after {
@@ -161,5 +158,4 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 80%;
 }
