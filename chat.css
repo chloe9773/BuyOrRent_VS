@@ -23,7 +23,7 @@ body {
 	border-right: 1px solid #DCDDE0;
 }
 
-.username-wrap, .unread-wrap, .chat-user-wrap {
+.username-wrap, .unread-wrap, .chatroom-top {
 	border-bottom: 1px solid #EFEFF0;
 }
 
@@ -135,4 +135,31 @@ body {
 .chat-time {
 	display: flex;
     align-items: flex-end;
+}
+
+.chat-content-wrap {
+	overflow-y: auto;
+	height: 80%;
+}
+
+.chat-input-wrap {
+	height: 25%;
+	padding: 16px;
+}
+
+.chat-input-box {
+	border: 1px solid #000;
+	border-radius: 8px;
+	height: 70%;
+}
+
+.right-wrap .chat-after {
+	
+}
+
+.tmp {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
 }
