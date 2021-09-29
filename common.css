@@ -205,6 +205,9 @@
 .p-30 {
     padding: 30px;
 }
+.plr-20 {
+    padding: 0 20px;
+}
 .pr-5 {
     padding-right: 5px;
 }
@@ -323,6 +326,9 @@
 .mt-r-5 {
     margin-top: 5rem;
 }
+.mt-r-5-5 {
+    margin-top: 5.5rem;
+}
 .mt-r-8 {
     margin-top: 8rem;
 }
@@ -394,6 +400,9 @@
 }
 .justify-center {
 	justify-content : center;
+}
+.justify-end {
+    justify-content: end;
 }
 .align-end {
     align-items: flex-end;

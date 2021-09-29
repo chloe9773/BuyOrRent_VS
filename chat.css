@@ -23,7 +23,7 @@ body {
 	border-right: 1px solid #DCDDE0;
 }
 
-.username-wrap, .unread-wrap {
+.username-wrap, .unread-wrap, .chat-user-wrap {
 	border-bottom: 1px solid #EFEFF0;
 }
 
@@ -109,4 +109,30 @@ body {
 
 .footer {
 	padding: 20px 10px;
+}
+
+.day-divider {
+	margin: 20px 0;
+	justify-content: center;
+	display: flex;
+}
+
+.date {
+	border: 1px solid #EAEBEE;
+	border-radius: 14px;
+	height: 20px;
+	padding: 0px 12px;
+	align-items: center;
+	display: flex;
+}
+
+.main {
+	padding: 10px;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+}
+
+.chat-time {
+	display: flex;
+    align-items: flex-end;
 }

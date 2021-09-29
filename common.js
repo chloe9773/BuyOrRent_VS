@@ -187,18 +187,27 @@ function addDNone(classname) {
 }
 
 /* showing chatroom leave option */
-function chatLeaveOpt(optName, btnName){
+function chatLeaveOpt(optName, btnName, optBtn){
     deleteDNone(optName);
     $("." + btnName).removeAttr("onmouseleave");
+    $("." + btnName).unbind('mouseleave');
 
-    // $('html').click(function(e){ 
-    //     if(!$(e.target).hasClass('chat-in')){ 
-    //         $("." + btnName).bind("onmouseleave", function() {
-    //             addDNone(btnName);
-    //         });
-    //         addDNone(optName);
-    //     }
-    // });
+    $('html').click(function(e){ 
+        if(!$(e.target).hasClass('chat-in')){
+            $("." + btnName).bind('mouseleave', function(){
+                addDNone(optBtn);
+            });
+           
+            addDNone(optBtn);
+            addDNone(optName);
+        }
+    });
 }
 
+/* 채팅 선택시 우측에 채팅 내용 표시 */
+function enterChat() {
+    addDNone('chat-before');
+    $('.chat-before').removeClass('table');
+    deleteDNone('chat-after');
+}
 
