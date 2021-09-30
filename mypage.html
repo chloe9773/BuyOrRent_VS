@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="reset.css" rel="stylesheet"/>
+	<link href="common.css" rel="stylesheet"/>
+	<link href="home.css" rel="stylesheet"/>
+	<link href="mypage.css" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/64f7ef32af.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="home.js"></script>
+	<script>
+		const body = document.querySelector('body');
+		const modal = document.querySelector('.modal');
+		const btnOpenPopup = document.querySelector('.modal-open-btn');
+  
+		btnOpenPopup.addEventListener('click', () => {
+		  modal.classList.toggle('show');
+  
+		  if (modal.classList.contains('show')) {
+			body.style.overflow = 'hidden';
+		  }
+		});
+  
+		modal.addEventListener('click', (event) => {
+		  if (event.target === modal) {
+			modal.classList.toggle('show');
+  
+			if (!modal.classList.contains('show')) {
+			  body.style.overflow = 'auto';
+			}
+		  }
+		});
+	  </script>
+</head>
+<body>
+	<div class="following-top-wrap w-100 d-flex bg-white">
+		<div class="following-top-content d-flex justify-bw w-50 m-center">
+			<div class="following-top-left-wrap d-flex w-70">
+				<div class="following-top-left mr-30">
+					<a href="#">
+						<div class="following-top-title weight-700 font-r-logo">로고로고</div>
+					</a>
+				</div>
+				<div class="following-top-middle d-flex w-70">
+					<div class="following-top-search-wrap d-flex border-1 border-r-6 p-5 w-100 bg-white">
+						<input class="search w-95 gray-light"  placeholder="동네 이름, 물품명 등을 검색해보세요!"/>
+						<div class="search-btn">
+							<i class="fas fa-search gray-middle cursor"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="following-top-right d-flex">
+				<div class="following-top-menu p-30 cursor pos-r" onclick="toggleMenu();">
+					<span class="menu-title">메뉴</span>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				<ul class="following-menu-drop bg-gray-v-light border-r-6 pos-ab d-none p-24">
+					<a href="login.html">
+						<li class="pb-12"><i class="fas fa-sign-in-alt mr-10"></i>로그인</li>
+					</a>
+					<a href="mypage.html" class=""> <!-- d-none -->
+						<li class="pb-12"><i class="fas fa-address-card mr-10"></i>마이페이지</li>
+					</a>
+					<a href="rent.html">
+						<li class="pb-12"><i class="fas fa-truck-loading mr-10"></i>대여</li>
+					</a>
+					<a href="sell.html">
+						<li class="pb-12"><i class="fas fa-hand-holding-usd mr-10"></i>중고거래</li>
+					</a>
+					<a href="freeboard.html">
+						<li class="pb-12"><i class="fas fa-comments mr-10"></i>자유게시판</li>
+					</a>
+					<a href="#" class="d-none">
+						<li class="pb-12"><i class="fas fa-sign-out-alt mr-10"></i>로그아웃</li>
+					</a>
+				</ul>
+				<div class="following-top-chat">
+					<a href="chat.html">
+						<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content w-100 mt-r-5 p-10 bg-g">
+		<div class="section-wrap w-50 m-center d-flex justify-bw"> <!--d-flex justify-bw -->
+			<div class="section-left w-50">
+				<div class="my-box box-type-profile">
+					<div class="box-title font-20 weight-700">프로필</div>
+					<div class="box-content">
+						<div class="img-wrap">
+							<img class="d-none"/>
+						</div>
+						<div class="sub-item-wrap">
+							<div class="sub-item-1 mb-5">
+								<span class="sub-item-title weight-700 font-12">별명</span>
+								<span id="nick" class="sub-item font-14">해봄</span>
+							</div>
+						</div>
+					</div>
+					<div class="modify-btn-wrap t-right">
+						<button class="modify-btn font-12">수정</button>
+					</div>
+				</div>
+				<div class="my-box box-type-article">
+					<div class="box-title font-20 weight-700">게시글 관리</div>
+					<div class="box-content">
+						<div class="sub-item-wrap">
+							<div class="sub-item mb-5">
+								<div class="img-wrap">
+									<span class="ico-article">
+										<i class="fas fa-file-alt"></i>
+									</span>
+								</div>
+								<div class="sub-item-title weight-700 font-12">내 게시글</div>
+							</div>
+							<div class="sub-item mb-5">
+								<div class="img-wrap">
+									<span class="ico-article">
+										<i class="fas fa-comment-dots"></i>
+									</span>
+								</div>
+								<div class="sub-item-title weight-700 font-12">내 댓글</div>
+							</div>
+						</div>
+					</div>
+					<div class="modify-btn-wrap t-right">
+						<button class="modify-btn font-12">수정</button>
+					</div>
+				</div>
+			</div>
+			<div class="section-right w-50">
+				<div class="my-box box-type-contact">
+					<div class="box-title font-20 weight-700">연락처</div>
+					<div class="box-content">
+						<div class="sub-item-wrap">
+							<div class="sub-item-1 mb-5">
+								<span class="sub-item-title weight-700 font-12">이메일</span>
+								<span id="nick" class="sub-item font-14">jeonghwapark@outlook.com</span>
+							</div>
+							<div class="sub-item-2 mb-5">
+								<span class="sub-item-title weight-700 font-12">휴대전화</span>
+								<span id="nick" class="sub-item font-14">010-1992-0506</span>
+							</div>
+						</div>
+					</div>
+					<div class="modify-btn-wrap t-right">
+						<button class="modify-btn font-12">수정</button>
+					</div>
+				</div>
+				<div class="my-box box-type-article">
+					<div class="box-title font-20 weight-700">거래내역 관리</div>
+					<div class="box-content">
+						<div class="sub-item-wrap">
+							<div class="sub-item mb-5">
+								<div class="img-wrap">
+									<span class="ico-article">
+										<i class="fas fa-file-alt"></i>
+									</span>
+								</div>
+								<div class="sub-item-title weight-700 font-12">판매내역</div>
+							</div>
+							<div class="sub-item mb-5">
+								<div class="img-wrap">
+									<span class="ico-article">
+										<i class="fas fa-cash-register"></i>
+									</span>
+								</div>
+								<div class="sub-item-title weight-700 font-12">구매내역</div>
+							</div>
+							<div class="sub-item mb-5">
+								<div class="img-wrap">
+									<span class="ico-article">
+										<i class="fas fa-recycle"></i>
+									</span>
+								</div>
+								<div class="sub-item-title weight-700 font-12">대여내역</div>
+							</div>
+						</div>
+					</div>
+					<div class="modify-btn-wrap t-right">
+						<button class="modify-btn font-12">수정</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer bg-gray-middle white ptb-r-4 clear">
+		<div class="footer-wrap w-50 m-center">푸터푸터푸터푸터푸터푸터</div>
+	</footer>
+</body>
+</html>

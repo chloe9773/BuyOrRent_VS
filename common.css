@@ -172,6 +172,9 @@
 .w-100 {
 	width : 100%;	
 }
+.w-auto {
+	width : auto;	
+}
 
 /* height */
 .h-100vh {
