@@ -259,8 +259,14 @@
 .m-center {
     margin: 0 auto;
 }
+.m-16 {
+    margin: 16px;
+}
 .ml-5 {
     margin-left: 5px;
+}
+.ml-20 {
+    margin-left: 20px;
 }
 .mr-3 {
     margin-right: 3px;

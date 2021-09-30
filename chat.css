@@ -23,8 +23,25 @@ body {
 	border-right: 1px solid #DCDDE0;
 }
 
-.username-wrap, .unread-wrap, .chatroom-top {
+.username-wrap, .unread-wrap, .chatroom-top, .chatroom-wrap {
 	border-bottom: 1px solid #EFEFF0;
+}
+
+.username-wrap, .footer, .chatroom-top {
+	height: 56px; 
+	min-height: 56px;
+}
+
+.username-wrap {
+	line-height: 56px;
+}
+
+.footer {
+	line-height: 28px;
+}
+
+.chat-user-wrap {
+	align-items: center;
 }
 
 .chat-box {
@@ -62,6 +79,8 @@ body {
 
 .chatroom-wrap {
 	overflow-y: auto;
+	height: calc(100% - 56px - 22px - 56px); 
+	/* overflow: hidden; */
 }
 
 .chat-prev-wrap {
@@ -106,10 +125,6 @@ body {
 	border-top: 1px solid #EFEFF0;
 }
 
-.footer {
-	padding: 20px 10px;
-}
-
 .day-divider {
 	margin: 20px 0;
 	justify-content: center;
@@ -138,24 +153,31 @@ body {
 
 .chat-content-wrap {
 	overflow-y: auto;
-}
-
-.chat-input-wrap {
-	height: 25%;
-	padding: 16px;
-}
-
-.chat-input-box {
-	border: 1px solid #000;
-	border-radius: 8px;
-}
-
-.right-wrap .chat-after {
-	
+    height: calc(100% - 170px - 56px);
 }
 
 .tmp {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.chat-div-wrap {
+	height: calc(100vh - 5rem);
+}
+
+.chat-after-bottom {
+	height: 170px;
+}
+
+.chat-input-wrap {
+	border-radius: 8px;
+}
+
+button {
+    background-color: #F1F3F5;
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid transparent;
+    border-radius: 3px;
 }
