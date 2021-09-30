@@ -160,7 +160,11 @@
 						</div>
 					</div>
 					<div class="chatroom-opt-wrap d-flex align-center cursor">
-						<i class="fas fa-ellipsis-v font-20 icon-color"></i>
+						<i id="chat-opt-elipsis" class="fas fa-ellipsis-v font-20 icon-color" onclick="toggle('chatroom-opt-box');"></i>
+						<div class="chatroom-opt-box d-none">
+							<div class="block-user p-10 bg-hover">대화상대 차단하기</div>
+							<div class="leave-chat p-10 bg-hover">채팅방 나가기</div>
+						</div>
 					</div>
 				</div>
 				<div class="chat-content-wrap">

@@ -181,3 +181,23 @@ button {
     border: 1px solid transparent;
     border-radius: 3px;
 }
+
+.chatroom-opt-box {
+	background-color: #F8F9FA;
+    border: 1px solid #868B94;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+	position: absolute;
+	top: 130px;
+    right: 404px;
+}
+
+.chatroom-opt-wrap>i {
+	position: relative;
+}
+
+.bg-hover:hover {
+	background-color: #eaebee;
+	border-radius: 8px;
+}

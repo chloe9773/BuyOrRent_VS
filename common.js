@@ -211,3 +211,7 @@ function enterChat() {
     deleteDNone('chat-after');
 }
 
+/* d-none 토글 */
+function toggle(classname) {
+    $("." + classname).toggle();
+}
