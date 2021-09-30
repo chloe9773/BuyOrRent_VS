@@ -9,30 +9,8 @@
 	<script src="https://kit.fontawesome.com/64f7ef32af.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="common.js"></script>
-	<script type="text/javascript" src="home.js"></script>
-	<script>
-		const body = document.querySelector('body');
-		const modal = document.querySelector('.modal');
-		const btnOpenPopup = document.querySelector('.modal-open-btn');
-  
-		btnOpenPopup.addEventListener('click', () => {
-		  modal.classList.toggle('show');
-  
-		  if (modal.classList.contains('show')) {
-			body.style.overflow = 'hidden';
-		  }
-		});
-  
-		modal.addEventListener('click', (event) => {
-		  if (event.target === modal) {
-			modal.classList.toggle('show');
-  
-			if (!modal.classList.contains('show')) {
-			  body.style.overflow = 'auto';
-			}
-		  }
-		});
-	  </script>
+	<script type="text/javascript" src="mypage.js"></script>
+	<!-- <script type="text/javascript" src="home.js"></script> -->
 </head>
 <body>
 	<div class="following-top-wrap w-100 d-flex bg-white">
@@ -85,11 +63,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-content w-100 mt-r-5 p-10 bg-g">
-		<div class="section-wrap w-50 m-center d-flex justify-bw"> <!--d-flex justify-bw -->
+	<div id="main-content" class="main-content w-100 mt-r-5 p-10 bg-g">
+		<div id="section-wrap" class="section-wrap w-50 m-center d-flex justify-bw"> <!--d-flex justify-bw -->
 			<div class="section-left w-50">
 				<div class="my-box box-type-profile">
-					<div class="box-title font-20 weight-700">프로필</div>
+					<div id="profile-title" class="box-title font-20 weight-700">프로필</div>
 					<div class="box-content">
 						<div class="img-wrap">
 							<img class="d-none"/>
@@ -102,7 +80,7 @@
 						</div>
 					</div>
 					<div class="modify-btn-wrap t-right">
-						<button class="modify-btn font-12">수정</button>
+						<button id="profile" class="modify-btn font-12">수정</button>
 					</div>
 				</div>
 				<div class="my-box box-type-article">
@@ -128,7 +106,7 @@
 						</div>
 					</div>
 					<div class="modify-btn-wrap t-right">
-						<button class="modify-btn font-12">수정</button>
+						<button id="manage-article" class="modify-btn font-12">수정</button>
 					</div>
 				</div>
 			</div>
@@ -138,7 +116,7 @@
 					<div class="box-content">
 						<div class="sub-item-wrap">
 							<div class="sub-item-1 mb-5">
-								<span class="sub-item-title weight-700 font-12">이메일</span>
+								<span id="contact-title" class="sub-item-title weight-700 font-12">이메일</span>
 								<span id="nick" class="sub-item font-14">jeonghwapark@outlook.com</span>
 							</div>
 							<div class="sub-item-2 mb-5">
@@ -148,7 +126,7 @@
 						</div>
 					</div>
 					<div class="modify-btn-wrap t-right">
-						<button class="modify-btn font-12">수정</button>
+						<button id="contact" class="modify-btn font-12">수정</button>
 					</div>
 				</div>
 				<div class="my-box box-type-article">
@@ -182,7 +160,7 @@
 						</div>
 					</div>
 					<div class="modify-btn-wrap t-right">
-						<button class="modify-btn font-12">수정</button>
+						<button id="manage-sale" class="modify-btn font-12">수정</button>
 					</div>
 				</div>
 			</div>
