@@ -67,11 +67,11 @@
 		<div id="section-wrap" class="section-wrap w-50 m-center p-30">
 			<div class='section-top-wrap mb-30'>
                 <div class='section-titles font-20 weight-700 mb-10'>
-                    <span class='section-type mr-5'>프로필</span>
+                    <span class='section-type mr-5'>내 게시글</span>
                     <span class='section-sub-title'>수정</span>
                 </div>
                 <div class='section-sub-title font-12 icon-color'>
-                    <span class='section-type mr-5'>대표 프로필과 별명을 수정 하실 수 있습니다.</span>
+                    <span class='section-type mr-5'>작성한 게시글과 댓글을 수정, 삭제 할 수 있습니다.</span>
 					<!-- <span class='section-type mr-5 d-block'>
                     	<span class='userid weight-700 highlight'>jeonghwa</span>
 					</span>
@@ -79,10 +79,32 @@
                 </div>
 			</div>
 			<div class='section-bottom-wrap'>
-				
+				<div class="content-table-tab">
+					<div class="tab-articles">내가 쓴 게시글</div>
+					<div class="tab-comment">내가 쓴 댓글</div>
+				</div>
+				<div class="content-table-sub d-flex justify-bw">
+					<div class="">
+						<button>전체선택</button>
+						<button>삭제</button>
+					</div>
+					<div class="search-submenu">
+						<select class="" name="myarticle-search">
+							<option value="all">제목+내용</option>
+							<option value="title">글제목</option>
+						</select>
+					</div>
+				</div>
+				<div class="content-table-wrap w-100">
+					<table class="content-table w-100">
+
+					</table>
+				</div>
 				<div class="content-submit-btn-grp t-center">
 					<button>적용</button>
-					<button>취소</button>
+					<a href="mypage.html">
+						<button>취소</button>
+					</a>
 				</div>
 			</div>
 		</div>
