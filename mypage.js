@@ -74,3 +74,10 @@ $(document).ready(function(){
         $("#main-content").html(newSectionWrap);
     });
 });
+
+$(document).ready(function(){
+    $(document).on("click", ".modify-setting-btn", function() {
+        var targid = $(this).attr("id");
+        removeNone("modify-setting-"+targid);
+    });
+});

@@ -41,6 +41,11 @@
     font-size: 1.5rem;
 }
 
+/* word-break */
+.keep-all {
+    word-break: keep-all;
+}
+
 /* line-height */
 .line-h {
     line-height: 1.36;
@@ -298,6 +303,9 @@
 }
 .mt-12 {
     margin-top: 12px;
+}
+.mt-10 {
+    margin-top: 10px;
 }
 .mt-30 {
     margin-top: 30px;

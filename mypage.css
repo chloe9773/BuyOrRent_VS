@@ -97,6 +97,7 @@ table {
 
 .content-table-head {
     padding: 30px;
+    word-break: keep-all;
 }
 
 .content-table-text {
@@ -115,4 +116,8 @@ table {
 
 .content-table-border {
     border-bottom : 1px solid #e5e5e5;
+}
+
+.context {
+    
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="reset.css" rel="stylesheet"/>
+	<link href="common.css" rel="stylesheet"/>
+	<link href="home.css" rel="stylesheet"/>
+	<link href="mypage.css" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/64f7ef32af.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="mypage.js"></script>
+	<!-- <script type="text/javascript" src="home.js"></script> -->
+</head>
+<body>
+	<div class="following-top-wrap w-100 d-flex bg-white">
+		<div class="following-top-content d-flex justify-bw w-50 m-center">
+			<div class="following-top-left-wrap d-flex w-70">
+				<div class="following-top-left mr-30">
+					<a href="home.html">
+						<div class="following-top-title weight-700 font-r-logo">로고로고</div>
+					</a>
+				</div>
+				<div class="following-top-middle d-flex w-70">
+					<div class="following-top-search-wrap d-flex border-1 border-r-6 p-5 w-100 bg-white">
+						<input class="search w-95 gray-light"  placeholder="동네 이름, 물품명 등을 검색해보세요!"/>
+						<div class="search-btn">
+							<i class="fas fa-search gray-middle cursor"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="following-top-right d-flex">
+				<div class="following-top-menu p-30 cursor pos-r" onclick="toggleMenu();">
+					<span class="menu-title">메뉴</span>
+					<i class="fas fa-angle-down"></i>
+				</div>
+				<ul class="following-menu-drop bg-gray-v-light border-r-6 pos-ab d-none p-24">
+					<a href="login.html">
+						<li class="pb-12"><i class="fas fa-sign-in-alt mr-10"></i>로그인</li>
+					</a>
+					<a href="mypage.html" class=""> <!-- d-none -->
+						<li class="pb-12"><i class="fas fa-address-card mr-10"></i>마이페이지</li>
+					</a>
+					<a href="rent.html">
+						<li class="pb-12"><i class="fas fa-truck-loading mr-10"></i>대여</li>
+					</a>
+					<a href="sell.html">
+						<li class="pb-12"><i class="fas fa-hand-holding-usd mr-10"></i>중고거래</li>
+					</a>
+					<a href="freeboard.html">
+						<li class="pb-12"><i class="fas fa-comments mr-10"></i>자유게시판</li>
+					</a>
+					<a href="#" class="d-none">
+						<li class="pb-12"><i class="fas fa-sign-out-alt mr-10"></i>로그아웃</li>
+					</a>
+				</ul>
+				<div class="following-top-chat">
+					<a href="chat.html">
+						<div class="chat-title border-1 border-r-6 cursor">실시간 채팅</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main-content" class="main-content w-100 mt-r-5 p-10 bg-white">
+		<div id="section-wrap" class="section-wrap w-50 m-center p-30">
+			<div class='section-top-wrap mb-30'>
+                <div class='section-titles font-20 weight-700 mb-10'>
+                    <span class='section-type mr-5'>프로필</span>
+                    <span class='section-sub-title'>수정</span>
+                </div>
+                <div class='section-sub-title font-12 icon-color'>
+                    <span class='section-type mr-5'>대표 프로필과 별명을 수정 하실 수 있습니다.</span>
+					<!-- <span class='section-type mr-5 d-block'>
+                    	<span class='userid weight-700 highlight'>jeonghwa</span>
+					</span>
+                    <span class='section-type mr-5 d-block'>님의 </span> -->
+                </div>
+			</div>
+			<div class='section-bottom-wrap'>
+				
+				<div class="content-submit-btn-grp t-center">
+					<button>적용</button>
+					<button>취소</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer bg-gray-middle white ptb-r-4 clear">
+		<div class="footer-wrap w-50 m-center">푸터푸터푸터푸터푸터푸터</div>
+	</footer>
+</body>
+</html>

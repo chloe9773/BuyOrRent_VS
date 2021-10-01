@@ -180,10 +180,19 @@ function showHidePw(choice) {
 function deleteDNone(classname) {
     $("." + classname).removeClass("d-none");
 }
+/* delete d-none by id */
+function removeNone(id) {
+    $("#" + id).removeClass("d-none");
+}
+
 
 /* add d-none by classname */
 function addDNone(classname) {
     $("." + classname).addClass("d-none");
+}
+/* add d-none by id */
+function addNone(classname) {
+    $("#" + id).addClass("d-none");
 }
 
 /* showing chatroom leave option */
