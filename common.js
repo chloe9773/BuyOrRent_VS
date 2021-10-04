@@ -224,3 +224,12 @@ function enterChat() {
 function toggle(classname) {
     $("." + classname).toggle();
 }
+
+/* check all chkbox */
+function selectAllChk(e) {
+    if($("input[name='"+e.id+"']").prop("checked")) {
+        $("input[name='"+e.id+"']").prop("checked", false);
+    } else {
+        $("input[name='"+e.id+"']").prop("checked", true);
+    }
+}

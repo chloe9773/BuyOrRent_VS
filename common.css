@@ -132,12 +132,23 @@
     text-align: right;
 }
 
+/* text-decoration */
+.t-underline {
+    text-decoration: underline;
+}
+table td.t-title a:hover {
+    text-decoration: underline;
+}
+
 /* vertical align */
 .v-top {
     vertical-align: top;
 }
 
 /* width */
+.w-2 {
+	width : 2%;	
+}
 .w-20 {
 	width : 20%;	
 }
@@ -195,6 +206,9 @@
 }
 
 /* padding */
+.p-2 {
+    padding: 2px;
+}
 .p-5 {
     padding: 5px;
 }
@@ -490,3 +504,18 @@
     color: #c1c1c1;
 }
 
+/* page btn */
+.page-btn {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.page-btn:hover,  .comment-reply:hover{
+    text-decoration: underline;
+}
+
+.page-btn.active {
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
